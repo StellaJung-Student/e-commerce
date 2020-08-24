@@ -5,9 +5,12 @@ import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 
 import { store, persistor } from './redux/store';
+import dotenv from 'dotenv';
 
 import './index.css';
 import App from './App';
+
+dotenv.config();
 
 ReactDOM.render(
   <Provider store={store}>
