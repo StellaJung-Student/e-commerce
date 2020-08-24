@@ -28,8 +28,6 @@ export const createUserProfileDocument = async (userAuth, addtionalData) => {
   return userRef;
 };
 
-console.log('firebase-utils:', config);
-
 firebase.initializeApp(config);
 
 export const auth = firebase.auth();
