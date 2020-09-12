@@ -14,11 +14,19 @@
     border-bottom: 1px solid darkgrey;
 
     .header-block {
-      text-transform: capitalize;
+      // text-transform: capitalize;
       width: 23%;
 
       &:last-child {
         width: 8%;
+      }
+
+      @media screen and (max-width: 800px) {
+        width: 22%;
+
+        &:last-child {
+          width: 12%;
+        }
       }
     }
   }
@@ -38,5 +46,9 @@
     margin-top: 40px;
     font-size: 24px;
     color: red;
+  }
+
+  @media screen and (max-width: 800px) {
+    width: 90%;
   }
 }
